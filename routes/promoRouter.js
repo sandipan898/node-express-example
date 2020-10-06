@@ -39,7 +39,7 @@ promoRouter.route('/:promoId')
     .put((req, res, next) => {
         res.write('Updating the promotion: ' + req.params.promoId + '\n');
         res.end('Will update the promotion: ' + req.body.name +
-            'with details: ' + req.body.description);
+            ' with details: ' + req.body.description);
     })
     .delete((req, res, next) => {
         res.end('Deleting promotion: ' + req.params.promoId);
